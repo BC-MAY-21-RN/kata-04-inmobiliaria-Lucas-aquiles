@@ -1,0 +1,81 @@
+{"properties":
+[
+{
+    "name": "The Willows",
+    "adress":"3517 W.Gray St. Utica",
+    "number_rooms":"3",
+"number_bathrooms":"2",
+"surface":"230",
+"cost":"440",
+"qualification":"4.7",
+"id":"1",
+"img": "https://www.bbva.com/wp-content/uploads/2021/04/casas-ecolo%CC%81gicas_apertura-hogar-sostenibilidad-certificado--1024x629.jpg"
+   
+},
+{
+    "name": "Orchard House",
+    "adress":"3517 W.Gray St. Utica",
+    "number_rooms":"4",
+"number_bathrooms":"2",
+"surface":"530",
+"cost":"840",
+"qualification":"5.0",
+"id":"2",
+"img": "https://i.pinimg.com/736x/7f/5c/d6/7f5cd67173d9a4cb19d2c0dbb126ccde.jpg"
+    
+},
+{
+    "name": "The Willows",
+    "adress":"3517 W.Gray St. Utica",
+    "number_rooms":"3",
+"number_bathrooms":"2",
+"surface":"230",
+"cost":"440",
+"qualification":"4.7",
+"id":"3",
+"img": "https://www.bbva.com/wp-content/uploads/2021/04/casas-ecolo%CC%81gicas_apertura-hogar-sostenibilidad-certificado--1024x629.jpg"
+
+    
+},
+{
+    "name": "Orchard House",
+    "adress":"3517 W.Gray St. Utica",
+    "number_rooms":"4",
+"number_bathrooms":"2",
+"surface":"530",
+"cost":"840",
+"qualification":"5.0",
+"id":"4",
+"img": "https://i.pinimg.com/736x/7f/5c/d6/7f5cd67173d9a4cb19d2c0dbb126ccde.jpg"
+
+    
+}
+,
+{
+    "name": "The Willows",
+    "adress":"3517 W.Gray St. Utica",
+    "number_rooms":"3",
+"number_bathrooms":"2",
+"surface":"230",
+"cost":"440",
+"qualification":"4.7",
+"id":"5",
+"img": "https://www.bbva.com/wp-content/uploads/2021/04/casas-ecolo%CC%81gicas_apertura-hogar-sostenibilidad-certificado--1024x629.jpg"
+
+    
+},
+{
+    "name": "Corners House",
+    "adress":"3517 W.Gray St. Utica",
+    "number_rooms":"4",
+"number_bathrooms":"2",
+"surface":"530",
+"cost":"840",
+"qualification":"5.0",
+"id":"6",
+"img": "https://i.pinimg.com/736x/7f/5c/d6/7f5cd67173d9a4cb19d2c0dbb126ccde.jpg"
+
+    
+}
+]
+}
