@@ -1,7 +1,6 @@
 ![BrightCoders Logo](img/logo-bc.png)
 
 # Inmobiliaria
-
 ![Cover](img/cover.jpg)
 <span>Photo by <a href="https://unsplash.com/@jd_alon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jose Alonso</a> on <a href="https://unsplash.com/s/photos/rental?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
