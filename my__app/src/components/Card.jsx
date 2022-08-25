@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 
-import { FlatList, StyleSheet, Text, View, Image, ImageBackground,TouchableHighlight } from "react-native";
+import { Platform,FlatList, StyleSheet, Text, View, Image, ImageBackground,TouchableOpacity, LayoutAnimation,  UIManager,} from "react-native";
 import { MaterialCommunityIcons, Ionicons, FontAwesome} from "@expo/vector-icons";
+import Lottie from 'lottie-react-native';
+
+
+if (Platform.OS === 'android') {
+  if (UIManager.setLayoutAnimationEnabledExperimental) {
+    UIManager.setLayoutAnimationEnabledExperimental(true);
+  }
+}
 
 const SmallCard = (props) => {
 
@@ -24,15 +32,32 @@ const SmallCard = (props) => {
   );
 };
 
-const Card = ({item}) => {
 
+
+
+const Card = ({item}) => {
+  const [expanded, setExpanded] = useState(false);
  
+  const [boxPosition, setBoxPosition] = useState('left');
+  const toggleBox = () => {
+  
+    setBoxPosition(boxPosition === 'left' ? 'right' : 'left');
+  };
+
+  {expanded ? '#20c997': 'red'}
+
   return (
     
-    <TouchableHighlight   activeOpacity={0.5}   underlayColor="#DDDDDD"
+    <TouchableOpacity   activeOpacity={0.8}   underlayColor="red"
+    onPress={    (  ) => {
+      LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
+      setExpanded(!expanded); 
+      {toggleBox()}
+    }}
     >
-    
-         <View style={ styles.container}>
+          <Lottie source={require('./sky.json')} autoPlay loop />
+
+         <View style={ (boxPosition === 'left') ? (styles.container) : (styles.containerP)}>
       <View style ={styles.container1}> 
 
         <ImageBackground style={styles.section1}
@@ -62,19 +87,19 @@ const Card = ({item}) => {
         
             <View style={styles.smallsection2}>   
           <Text style={{fontWeight:"700", fontSize:20} }> ${item.cost}/m</Text>
-          <Ionicons name="heart-circle" size={30} color="#20c997" />
+          <Ionicons name="heart-circle" size={30} color=  {expanded ? '#20c997': 'red'} />
           </View>
           </View>
     </View>
     </View>
 
-    </TouchableHighlight >
+    </TouchableOpacity >
 
   );
 };
 
 const styles = StyleSheet.create({
-
+ 
   
 
   container: {
@@ -84,7 +109,13 @@ const styles = StyleSheet.create({
     width:'100%',
     borderRadius:10
   },
- 
+  containerP:{
+    backgroundColor:'#F5F9F8',
+    marginTop: 5, 
+    width:'100%',
+    borderRadius:10,
+    transform: [{ scale: 1.1 }]
+  },
 
   container1:{
     padding:10,
