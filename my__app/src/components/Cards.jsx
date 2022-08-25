@@ -15,7 +15,7 @@ const Cards = () => {
 
 
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList
         data={data.properties}
         renderItem={renderItem}>
@@ -24,5 +24,16 @@ const Cards = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: "center",
+    justifyContent: "center",
+    width:'100%',
+
+  },
+});
+
+
 
 export default Cards;
