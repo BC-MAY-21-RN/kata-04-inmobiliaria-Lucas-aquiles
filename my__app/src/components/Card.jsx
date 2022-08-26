@@ -5,11 +5,12 @@ import { MaterialCommunityIcons, Ionicons, FontAwesome} from "@expo/vector-icons
 import Lottie from 'lottie-react-native';
 
 
-if (Platform.OS === 'android') {
-  if (UIManager.setLayoutAnimationEnabledExperimental) {
-    UIManager.setLayoutAnimationEnabledExperimental(true);
-  }
-}
+// if (Platform.OS === 'android') {
+//   if (UIManager.setLayoutAnimationEnabledExperimental) {
+//     UIManager.setLayoutAnimationEnabledExperimental(true);
+//   }
+// }
+
 
 const SmallCard = (props) => {
 
@@ -50,12 +51,12 @@ const Card = ({item}) => {
     
     <TouchableOpacity   activeOpacity={0.8}   underlayColor="red"
     onPress={    (  ) => {
-      LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
+      // LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
       setExpanded(!expanded); 
       {toggleBox()}
     }}
     >
-          <Lottie source={require('./sky.json')} autoPlay loop />
+          <Lottie source={require('../../assets/sky.json')} autoPlay loop />
 
          <View style={ (boxPosition === 'left') ? (styles.container) : (styles.containerP)}>
       <View style ={styles.container1}> 
