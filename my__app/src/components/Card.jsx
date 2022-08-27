@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Platform,FlatList, StyleSheet, Text, View, Image, ImageBackground,TouchableOpacity, LayoutAnimation,  UIManager,} from "react-native";
+import {  StyleSheet, Text, View, ImageBackground,TouchableOpacity} from "react-native";
 import { MaterialCommunityIcons, Ionicons, FontAwesome} from "@expo/vector-icons";
 import Lottie from 'lottie-react-native';
 
@@ -14,20 +14,22 @@ import Lottie from 'lottie-react-native';
 
 const SmallCard = (props) => {
 
+  let {number_bathrooms, number_rooms,surface} = props
+
 
   return (
     <View style={styles.smallsection1}>
       <View style={styles.smallsection} >  
         <Ionicons name="bed-outline" size={24} color="black" />
-        <Text  style={{fontWeight:"700"}}> {props.number_rooms}</Text>
+        <Text  style={{fontWeight:"700"}}> {number_rooms}</Text>
         </View>
         <View style={styles.smallsection}>  
         <MaterialCommunityIcons name="shower" size={24} color="black" />
-        <Text style={{fontWeight:"700"}}> {props.number_bathrooms}</Text>
+        <Text style={{fontWeight:"700"}}> {number_bathrooms}</Text>
         </View>
         <View style={styles.smallsection}>  
         <MaterialCommunityIcons name="move-resize" size={24} color="black"  />
-        <Text style={{fontWeight:"700"}}> {props.surface} </Text>
+        <Text style={{fontWeight:"700"}}> {surface} </Text>
         </View>
     </View>
   );

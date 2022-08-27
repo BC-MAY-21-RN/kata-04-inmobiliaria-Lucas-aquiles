@@ -1,5 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Cards from "./src/components/Cards";
+import React from 'react';
+
 
 export default function App() {
   return (
