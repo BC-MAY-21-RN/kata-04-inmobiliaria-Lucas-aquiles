@@ -21,16 +21,16 @@ const SmallCard = (props) => {
     <View style={styles.smallsection1}>
       <View style={styles.smallsection} >  
         <Ionicons name="bed-outline" style={styles.icons}   />
-        <Text  style={{fontWeight:"700"}}> {number_rooms}</Text>
+        <Text  style={styles.text}> {number_rooms}</Text>
         </View>
         <View style={styles.smallsection}>  
         <MaterialCommunityIcons name="shower" style={styles.icons} />
-        <Text style={{fontWeight:"700"}}> {number_bathrooms}</Text>
+        <Text style={styles.text}  > {number_bathrooms}</Text>
         </View>
         <View style={styles.smallsection}>  
         <MaterialCommunityIcons name="move-resize" style={styles.icons}
           />
-        <Text style={{fontWeight:"700"}}> {surface} </Text>
+        <Text style={styles.text}> {surface} </Text>
         </View>
     </View>
   );
@@ -181,6 +181,10 @@ const styles = StyleSheet.create({
   size:24,
   color:"black"
 
+ }
+ ,
+ text:{
+  fontWeight:"700"
  }
 
 });
