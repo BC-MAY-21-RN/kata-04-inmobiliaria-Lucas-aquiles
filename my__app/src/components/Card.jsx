@@ -16,15 +16,17 @@ const SmallCard = (props) => {
 
   let {number_bathrooms, number_rooms,surface} = props
 
+var a = "bed-outline";
+var b = "shower"
 
   return (
     <View style={styles.smallsection1}>
       <View style={styles.smallsection} >  
-        <Ionicons name="bed-outline" style={styles.icons}   />
+        <Ionicons name={a} style={styles.icons}   />
         <Text  style={styles.text}> {number_rooms}</Text>
         </View>
         <View style={styles.smallsection}>  
-        <MaterialCommunityIcons name="shower" style={styles.icons} />
+        <MaterialCommunityIcons name={b} style={styles.icons} />
         <Text style={styles.text}  > {number_bathrooms}</Text>
         </View>
         <View style={styles.smallsection}>  
